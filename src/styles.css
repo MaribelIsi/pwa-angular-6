@@ -1,0 +1,32 @@
+.text-info {
+  color: #0097A6 !important;
+}
+.text-secondary {
+  color: #636569 !important;
+}
+
+.card {
+    border: 1px solid rgba(0, 0, 0, 0) !important;
+    border-radius: 0rem !important;
+}
+.card-body {
+    padding: 0rem !important;
+    padding-top: 10px !important;
+}
+
+.banners {
+    margin: 0 auto;
+    font-size: 25px;
+}
+
+.btn-link {
+    color: #74C8D2 !important;
+}
+
+.mb-7 {
+  margin-bottom: 7rem;
+}
+
+.star-info {
+  color: #74C8D2;
+}

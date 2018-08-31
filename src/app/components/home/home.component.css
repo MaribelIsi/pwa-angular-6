@@ -1,0 +1,128 @@
+hr {
+  width: 0px;
+  height: 200px;
+  border: 0.5px solid #636569;
+  max-height: 500px;
+  z-index: 1;
+}
+
+.icon-map {
+  color: #74C8D2;
+  font-size: 23px;
+}
+
+.icon-car {
+  height: 60px;
+  width: 60px;
+  /* line-height: 10px; */
+  color: #fff;
+  border-radius: 50%;
+  background-color: #74C8D2;
+  font-size: 26px;
+  transform: translate(4rem, -11.5rem);
+  /* transform: translate(26%, -11.5rem); */
+}
+
+.i-car {
+  line-height: 3.6rem;
+}
+
+.bg-secondary {
+    background-color: #E9E9EA !important;
+}
+
+.date-p {
+  margin-bottom: 5px;
+}
+
+.form-control {
+    color: #74C8D2;
+    background-color: #E9E9EA;
+    border: 1px solid #E9E9EA;
+    border-bottom-color: #74C8D2;
+    border-radius: 0rem;
+}
+
+.btn.btn-hrs {
+    border-radius: 0rem;
+}
+
+.btn-outline-secondary {
+    color: #74C8D2;
+    border-color: #E9E9EA;
+}
+
+.btn-outline-secondary:hover {
+    color: #E9E9EA !important;
+    background-color: #74C8D2;
+    border-color: #74C8D2 !important;
+}
+
+.btn-outline-secondary:not(:disabled):not(.disabled):active {
+    color: #E9E9EA;
+    background-color: #74C8D2;
+    border-color: #74C8D2;
+}
+
+.btn-secondary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(116, 200, 210, 1) !important;
+}
+
+.btn:focus, .btn.focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(116, 200, 210, 1) !important;
+}
+
+.btn-info:not(:disabled):not(.disabled).active {
+  color: #fff;
+  background-color: #74C8D2;
+  border-color: #74C8D2;
+}
+
+.btn-info {
+  color: #74C8D2;
+  background-color: #fff;
+  border-color: #74C8D2;
+  width: 6.45rem;
+}
+
+.btn-info-confirm {
+  color: #fff;
+  background-color: #74C8D2;
+  border-color: #74C8D2;
+}
+
+
+@media screen and ( max-width: 480px ) {
+  .btn-info {
+    width: 58px;
+  }
+  .icon-car {
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    transform: translate(25%, -11.5rem);
+  }
+  .i-car {
+    line-height: 2.6rem;
+  }
+}
+
+@media screen and ( min-width: 481px ) and ( max-width: 767px ) {
+  .icon-car {
+    transform: translate(20%, -11.5rem);
+  }
+}
+
+@media screen and ( min-width: 768px ) and ( max-width: 991px ) {
+  .icon-car {
+    transform: translate(50%, -11.5rem);
+  }
+}
+
+
+@media screen and ( min-width: 992px ) and ( max-width: 1199px ) {
+  .icon-car {
+    transform: translate(85%, -11.5rem);
+  }
+}

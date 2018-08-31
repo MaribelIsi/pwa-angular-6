@@ -1,0 +1,35 @@
+p {
+  margin-bottom: 0rem;
+}
+
+.border-top {
+  border-top: 1px solid #636569;
+}
+
+.flex-nav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.font-ico {
+  font-size: 30px;
+
+}
+
+.nav-link {
+  text-align: center;
+}
+
+.nav-link-active {
+  color: #74C8D2 !important;
+}
+
+@media screen and ( max-width: 480px ) {
+  /* .font-ico {
+    font-size: 30px;
+  } */
+}

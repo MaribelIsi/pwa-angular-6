@@ -1,0 +1,136 @@
+<div class="container mb-7">
+  <div class="row">
+    <div class="col-6 bg-secondary">
+      <p class="date-p font-weight-bold text-secondary">Please confirm</p>
+      <p class="date-p font-weight-normal text-secondary">date / time for this transfer</p>
+    </div>
+    <div class="col-6 bg-secondary">
+      <form class="form-inline float-right">
+        <div class="form-group">
+          <div class="input-group">
+            <input class="form-control"
+                   name="model" [(ngModel)]="model" ngbDatepicker #d="ngbDatepicker">
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary calendar" (click)="d.toggle()" type="button">
+                <i class="fa fa-calendar-plus-o" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="col-12 text-center">
+      <div class="btn-group btn-group-toggle" data-toggle="buttons">
+        <label class="btn btn-info btn-hrs ">
+          <input type="radio" name="options" id="option1" autocomplete="off" checked> 09:00
+        </label>
+        <label class="btn btn-info btn-hrs active">
+          <input type="radio" name="options" id="option2" autocomplete="off"> 10:00
+        </label>
+        <label class="btn btn-info btn-hrs">
+          <input type="radio" name="options" id="option3" autocomplete="off"> 12:00
+        </label>
+        <label class="btn btn-info btn-hrs">
+          <input type="radio" name="options" id="option3" autocomplete="off"> 14:00
+        </label>
+        <label class="btn btn-info btn-hrs">
+          <input type="radio" name="options" id="option3" autocomplete="off"> 16:00
+        </label>
+      </div>
+    </div>
+    <div class="mx-auto mt-3">
+      <button type="button" name="button" class="btn btn-info-confirm">CONFIRM</button>
+    </div>
+  </div>
+  <div class="row mt-5">
+    <div class="col-5 col-sm-5 col-md-5 col-lg-5">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title text-info font-weight-normal">Depart</h5>
+          <h6 class="card-subtitle font-weight-bold text-bold mb-2">
+            Bangkok Bus Terminal
+            North Eastern
+          </h6>
+          <p class="card-text text-secondary">
+            2 Kamphaeng Phet Rd,
+            Lat Yao, Khet Chatuchak,
+            Krung Thep Maha
+            Nakhon 10900, Tailandia <i class="fa fa-map-marker icon-map" aria-hidden="true"></i>
+          </p>
+          <p class="text-info">+855 96 999 3333</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-2 col-sm-2 col-md-2 col-lg-2 p-0 text-center">
+      <hr>
+      <div class="icon-car">
+        <i class="fa fa-car i-car" aria-hidden="true"></i>
+      </div>
+    </div>
+    <div class="col-5 col-sm-5 col-md-5 col-lg-5">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title text-info font-weight-normal">Arrive</h5>
+          <h6 class="card-subtitle font-weight-bold text-bold mb-2">
+            Gian Ibis Siem Reap
+          </h6>
+          <p class="card-text text-secondary">
+            Sivatha Blvd,
+            Krong Siem Reap
+            Camboya <i class="fa fa-map-marker icon-map" aria-hidden="true"></i>
+          </p>
+          <p class="text-info">+855 96 999 3333</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="bg-secondary w-100">
+      <p class="text-center text-info font-weight-bold banners">FUN THINGS TO DO</p>
+    </div>
+  </div>
+  <div class="row mt-3">
+    <div class="col-6 text-center" *ngFor="let fun of listFun">
+      <div class="card">
+        <img class="card-img-top" [src]="fun.url" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title text-info font-weight-normal"> {{ fun.title }} </h5>
+          <h6 class="card-subtitle font-weight-bold text-bold mb-2"> {{ fun.subtitle }} </h6>
+          <p class="card-text text-secondary"> $ {{ fun.price }} </p>
+          <p>
+            <i class="{{ getStar( fun.rate, 1 ) }} star-info" aria-hidden="true"></i>
+            <i class="{{ getStar( fun.rate, 2 ) }} star-info" aria-hidden="true"></i>
+            <i class="{{ getStar( fun.rate, 3 ) }} star-info" aria-hidden="true"></i>
+            <i class="{{ getStar( fun.rate, 4 ) }} star-info" aria-hidden="true"></i>
+            <i class="{{ getStar( fun.rate, 5 ) }} star-info" aria-hidden="true"></i>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="bg-secondary w-100">
+      <p class="text-center text-info font-weight-bold banners">WHERE TO STAY</p>
+    </div>
+  </div>
+  <div class="row mt-3">
+    <div class="col-6 text-center" *ngFor="let stay of listStay">
+      <div class="card">
+        <img class="card-img-top" [src]="stay.url" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title text-info font-weight-normal"> {{ stay.title }} </h5>
+          <h6 class="card-subtitle font-weight-bold text-bold mb-2"> {{ stay.subtitle }} </h6>
+          <p class="card-text text-secondary"> $ {{ stay.price }} </p>
+          <p>
+            <i class="{{ getStar( stay.rate, 1 ) }} star-info" aria-hidden="true"></i>
+            <i class="{{ getStar( stay.rate, 2 ) }} star-info" aria-hidden="true"></i>
+            <i class="{{ getStar( stay.rate, 3 ) }} star-info" aria-hidden="true"></i>
+            <i class="{{ getStar( stay.rate, 4 ) }} star-info" aria-hidden="true"></i>
+            <i class="{{ getStar( stay.rate, 5 ) }} star-info" aria-hidden="true"></i>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

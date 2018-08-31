@@ -1,0 +1,23 @@
+[
+  {
+    url: "assets/img/tirolesa.jpg",
+    title: "hotel",
+    subtitle: "sub",
+    price: 200000,
+    rate: 3.5,
+  },
+  {
+    url: "assets/img/tirolesa.jpg",
+    title: "hotel 2",
+    subtitle: "sub 2",
+    price: 200000,
+    rate: 4.5,
+  },
+  {
+    url: "assets/img/tirolesa.jpg",
+    title: "hotel 3 ",
+    subtitle: "sub 3",
+    price: 200000,
+    rate: 5,
+  }
+]
